@@ -1,0 +1,188 @@
+.galary-slide{
+    margin-block-start: -200px;
+    padding-block-end: 100px;
+    overflow: hidden;
+    .swiper{
+        padding-block-start: 51px;
+        padding-block-end: 250px;
+        
+        .slide__box{
+            display: flex;
+            justify-content: center;
+            // gap: 30px;
+            
+            .slide{
+                max-height: 584px;
+                position: relative;
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    background-image: url(../images/galary-slide/love\ \(1\)\ 1.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 25px;
+                    height: 24px;
+                    position: absolute;
+                    top: 33px;
+                    right: 33px;
+                }
+                .slide__stat{
+                    position: absolute;
+                    top: 23px;
+                    left: 23px;
+                    display: flex;
+                    align-items: center;
+                    padding: 14px 23px 10px 14px;
+                    background: rgba(255, 255, 255, 0.4);
+                    backdrop-filter: blur(3px);
+                    border-radius: 150px;
+                    gap: 8px;
+                    p{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+                    &::before{
+                        content: "";
+                        display: inline-block;
+                        background-image: url(../images/galary-slide/heart\ \(18\)\ 1.svg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 25px;
+                        height: 24px;
+                        display: flex;
+                    }
+                }
+                &:nth-child(2n){
+                    margin-block-start: 20px;
+                }
+                .slide__info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-block-start: 10px;
+                    &::after{
+                        content: "";
+                        display: inline-block;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background-color:  hsla(0, 0%, 100%, 0.4);
+                        backdrop-filter: blur(3px);
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                    }
+                    .slide__info-text{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 28px;
+                        text-align: center;
+                        color: #3D3D3D;
+                    }
+                    .slide__info-date{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        text-align: center;
+                        color: #3D3D3D;
+                    }
+                    .slide__info-prise{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 28px;
+                        text-align: center;
+                        color: #3D3D3D;      
+                        padding-block-end: 5px;                  
+                    }
+                    .slide__info-btn{
+                        background-color: transparent;
+                        cursor: pointer;
+                        border: none;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 30px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #4137D0;
+                    }
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 2px;
+                        height: 23px;
+                        background-color:  hsla(0, 0%, 24%, 1);
+                        margin-block-end: 30px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.swiper{
+    overflow:visible;
+}
+
+.swiper-slide{
+    width: auto;
+}
+.slide__nav-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-button-prev{
+    position: relative;
+    background-image: url(../images/galary-slide/prev-left.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 21px;
+    order: 1;
+    left: 50px;
+    top: 11px;
+}
+.swiper-button-next{
+    position: relative;
+    background-image: url(../images/galary-slide/prev-right.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 21px;
+    order: 3;
+    right: 50px;
+    top: 11px;
+}
+.swiper-pagination{
+    position: static;
+    width: 276px !important;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #E9E9E9;
+    backdrop-filter: blur(2px);
+    border-radius: 150px;
+    padding: 16px 22px;
+    order: 2;
+}
+// .owl-item{
+//     &:nth-child(2n){
+//         margin-block-start: 20px;
+//     }
+// }
+// .swiper {
+//     width: 600px;
+//     height: 300px;
+//   }

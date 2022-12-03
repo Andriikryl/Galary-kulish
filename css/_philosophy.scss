@@ -1,0 +1,62 @@
+.philosophy__text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #7C6E6E;    
+    padding-block-end: 41px;
+}
+
+.philosophy__box-titel{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 35px;
+    padding-block-end: 23px;
+}
+
+.philosophy__box-info{
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+
+.philosophy__box-info[data-state='reversed']{
+    gap: 110px;
+    .philosophy__box-info{
+        order: 2;
+    }
+    .philosophy__box-info-two{
+        order: 1;
+    }
+}
+.philosophy__box-info-one{
+    max-width: 1200px;
+}
+
+.philosophy__box-info-two{
+    max-width: 947px;
+}
+
+
+.philosophy{
+    position: relative;
+}
+
+.philosophy__box{
+    &::before{
+        content: "";
+        display: inline-block;
+        background-image: url(../images/hpylosofy/bg.png);
+        background-size: cover;
+        width: 641px;
+        height: 641px;
+        right: clamp(9rem,  14.55vw, 28rem);
+        // right: clamp(-8rem, -10.909rem + 14.55vw, 0rem);
+        top: -95px;
+        position: absolute;
+        z-index: -1;
+    }
+}

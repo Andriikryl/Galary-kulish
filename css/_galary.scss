@@ -1,0 +1,55 @@
+.galary{
+    background-image: url(../images/galary/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 120vh;
+    .galary__box{
+        padding-block-start: 130px;
+        .galary__box-titel{
+            font-family: 'Noto Serif';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 250px;
+            line-height: 220px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-shadow: 0px 6px 40px rgba(0, 0, 0, 0.9);
+            padding-block-end: 23px;
+            @media (max-width: 950px){
+                font-family: 'Noto Serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 90px;
+                line-height: 90px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                text-shadow: 0px 6px 40px rgba(0, 0, 0, 0.9);
+            }
+            @media (max-width: 450px){
+                font-family: 'Noto Serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 60px;
+                line-height: 65px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+        .galary__box-list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 75px;
+            margin-left: 20px;
+            // padding-block-end: 550px;
+            .galary__box-item{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 26px;
+                line-height: 28px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
